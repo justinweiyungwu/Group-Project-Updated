@@ -342,7 +342,7 @@
 /*JUSTIN*/
 .background {
   width: 100%;
-  background-color: slateblue;
+  background-color: #6969C6;
 }
 
 .photos {
@@ -351,7 +351,7 @@
 }
 
 .main {
-  background-color: slateblue;
+  background-color: #6969C6;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -391,4 +391,15 @@
   gap: 5%;
   top: 45%;
   width: 100%;
+}
+.photos {
+  padding: 20%;
+  height: 600px;
+  width: 500px;
+  transition: all .2s ease-in-out;
+
+}
+
+.photos {
+  transform: scale(1.2);
 }

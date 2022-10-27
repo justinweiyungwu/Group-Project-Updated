@@ -22,7 +22,7 @@ html {
 /*photography page stuff*/
 .background {
     width: 100%;
-    background-color: slateblue;
+    background-color:#6969C6;
 }
 
 .photos {
@@ -31,7 +31,7 @@ html {
 }
 
 .main {
-    background-color: slateblue;
+    background-color:#6969C6;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -72,7 +72,7 @@ html {
     top: 45%;
     width: 100%;
 }
-
+/*end of photography page styles*/
 .navbar {
     width: 85%;
     margin: auto;
