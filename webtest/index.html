@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>testing</title>
+   <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+   <div class="banner">
+      <div class="navbar">
+         <img src="/photos/logo.png" class="logo" alt="" height="80px" width="80px" />
+         <ul>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="Graphic Design.html">Graphic Design</a></li>
+            <li><a href="Artworks.html">Artwork</a></li>
+            <li><a href="#">Gallery</a></li>
+         </ul>
+      </div>
+   </div>
+   <div class="content">
+      <h1>DIGITAL MOODBOARD</h1>
+      <p>
+         This is an online portfolio compiling various artworks from Jimmy,
+         Justin, Kyle, Jacob, and Khalil.
+      </p>
+      <div class="sounds">
+         <img src="/photos/play.png" alt="" width="40px" height="40px" id="icon">
+         <p>Click to play sound
+         </p>
+      </div>
+   </div>
+   <audio id="song">
+      <source src="/songs/way2sexy.mp3" type="audio/mp3">
+   </audio>
+   <script>
+         var song = document.getElementById("song");
+         var icon = document.getElementById("icon");
+
+         icon.onclick = function () {
+            if (song.paused) {
+               song.play();
+               icon.src = "/photos/pause.png";
+            } else {
+               song.pause();
+               icon.src = "/photos/play.png";
+            }
+
+         }
+   </script>
+   <div class="content2">
+      <div class="left-1">
+         <img class="photos2" src="/home-images/car1.jpg">
+         <img class="photos2" src="/home-images/car2.jpg">
+         <img class="photos2" src="/home-images/car4.jpg">
+      </div>
+      
+      <div class="middle-1">
+         <img class="photos2" src="/home-images/car3.jpg">
+         <img class="photos2" src="/home-images/car5.jpg">
+      </div>
+      <footer class="footer-1">
+         <div class="footer-left">
+            <p class="footer-links">
+               <a class="link-1" href="index.html">Home</a>
+               <a href="photography.html">Photography</a>
+               <a href="Graphic Design.html">Graphic Design</a>
+               <a href="Artworks.html">Artwork</a>
+               <a href="#">Gallery</a>
+               <a href="faq.html">FAQ</a>
+            </p>
+            <p>Poggers &copy; 2022</p>
+         </div>
+      </footer>
+
+</body>
+</html>

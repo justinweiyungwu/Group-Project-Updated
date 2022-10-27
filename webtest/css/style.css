@@ -1,0 +1,394 @@
+/*JIMMY*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* background */
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/photos/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y 100%;
+  background-attachment: scroll;
+
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+/* Top nav buttons */
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #1D1D3B;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 70px;
+  margin-top: 80px;
+  font-family: kiak;
+}
+
+.content p .right-col {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.sounds {
+  float: middle;
+  margin-right: 0%;
+  margin-top: 30px;
+  align-items: center;
+}
+
+#icon {
+  cursor: pointer;
+}
+
+.footer-1 {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-1 .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Footer links */
+
+.footer-1 p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-1 p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-1 .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-1 .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-1 .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-1 .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: all .25s;
+}
+
+.footer-1 .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.footer-1 p.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.photos2:hover{
+  transform: scale(1.5);
+  transition: all .2s ease-in-out;
+}
+.photos2 {
+  width: 20%;
+  height: 20%;
+  border-radius: 20%;
+  box-shadow: 8px 8px rgb(55, 55, 55);
+}
+
+.content2 {
+  background-color: #292c2f;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 300%;
+}
+
+.left-1 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  top: 5%;
+  width: 100%;
+  text-align: left;
+}
+
+.middle-1 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  top: 25%;
+  width: 100%;
+  text-align: left;
+  color: #fff;
+}
+
+/*KYLE*/
+.middleCol {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.rightCol {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 64%;
+}
+
+.leftCol {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 32%;
+}
+
+.GDImg1 {
+  padding: 20%;
+  height: 600px;
+  width: 500px;
+  transition: all .2s ease-in-out;
+
+}
+
+.GDImg1:hover {
+  transform: scale(1.2);
+}
+
+/*KHALIL-------------------------------------------------*/
+.khalil {
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+
+  height: 0px;
+  bottom: 600px;
+  gap: 5px;
+  padding: 10px;
+}
+
+.line:hover {
+  transform: scale(1.5);
+  transition: all .2s ease-in-out;
+  object-fit: cover;
+}
+
+.manga:hover {
+  transform: scale(1.5);
+  transition: all .2s ease-in-out;
+  object-fit: cover;
+}
+
+.people:hover {
+  transform: scale(1.5);
+  transition: all .2s ease-in-out;
+  object-fit: cover;
+}
+
+.size:hover {
+  transform: scale(1.5);
+  transition: all .2s ease-in-out;
+  object-fit: cover;
+}
+
+.ship:hover {
+  transform: scale(1.5);
+  transition: all .2s ease-in-out;
+  object-fit: cover;
+}
+
+.skate:hover {
+  transform: scale(1.5);
+  transition: all .2s ease-in-out;
+  object-fit: cover;
+}
+
+.sketch:hover {
+  transform: scale(1.5);
+  transition: all .2s ease-in-out;
+  object-fit: cover;
+}
+
+.squid:hover {
+  transform: scale(1.5);
+  transition: all .2s ease-in-out;
+  object-fit: cover;
+}
+
+.wonky:hover {
+  transform: scale(1.5);
+  transition: all .2s ease-in-out;
+  object-fit: cover;
+}
+
+.art:hover {
+  transform: scale(1.5);
+  transition: all .2s ease-in-out;
+  object-fit: cover;
+}
+
+.kick:hover {
+  transform: scale(1.5);
+  transition: all .2s ease-in-out;
+  object-fit: cover;
+}
+
+.sleep:hover {
+  transform: scale(1.5);
+  transition: all .2s ease-in-out;
+  object-fit: cover;
+}
+
+
+
+/*JUSTIN*/
+.background {
+  width: 100%;
+  background-color: slateblue;
+}
+
+.photos {
+  width: 20%;
+  height: 20%;
+}
+
+.main {
+  background-color: slateblue;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 300%;
+}
+
+.left {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  top: 5%;
+  width: 100%;
+}
+
+.middle {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  top: 25%;
+  width: 100%;
+}
+
+.right {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  top: 45%;
+  width: 100%;
+}
